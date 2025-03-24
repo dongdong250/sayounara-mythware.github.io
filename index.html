@@ -1,197 +1,207 @@
 <!DOCTYPE html>
-<html lang="zh-hans">
+<html lang="zh-Hans">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>再见极域</title>
-
-    <!-- Mobile Specific Metas
-  ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- CSS
-  ================================================== -->
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- Elegant icon font -->
-     <link rel="stylesheet" href="css/line-icons.min.css">
-    <!-- Animation -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Prettyphoto -->
-    <link rel="stylesheet" href="css/prettyPhoto.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <!-- Scrolling nav css -->
-    <link rel="stylesheet" href="css/scrolling-nav.css">
-    <!-- Template styles-->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Responsive styles-->
-	<link rel="stylesheet" href="css/responsive.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="https://cdn.staticfile.org/lato/3.0.0/lato.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
   </head>
-  <body data-spy="scroll" data-target=".navbar-fixed-top" >
-    
-<!-- Header start -->
-	<header id="header" role="banner" >
-		<nav class="navbar navbar-default navbar-fixed-top"  id="tf-menu">
-			<div class="container">
-				<div class="row">
-					<!-- Logo start -->
-					<div class="navbar-header">
-					    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					        <span class="sr-only">Toggle navigation</span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					    </button>
-					    <div class="navbar-brand">
-						    <a href="#" class="page-scroll">
-						    	<img style="border-radius: 10px" width="80" height="45" src="http://61.186.173.89:2019/2021/10/02/8cc625ebcb980.jpeg" alt="logo">
-						    </a> 
-					    </div>                   
-					</div><!--/ Logo end -->
-					<div class="collapse navbar-collapse clearfix navMenu" role="navigation">
-						<ul class="nav navbar-nav navbar-right">
-				            <li class="active"><a class="page-scroll" href="#slider-part" >主页</a></li>
-				            <li><a class="page-scroll" href="https://zhenbei.xyz/mcdownload/index.php" >下载 Minecraft</a></li>
-				            <li><a class="page-scroll" href="http://zhenbei.xyz/mcdownload/home/help.php" >反馈</a></li>
-				            <li><a class="page-scroll" href="https://zhenbei.xyz" >内容中心</a></li>
-				            <li><a class="page-scroll" href="https://zhenbei.xyz/platform.php" >开放平台</a></li>
-				            
-				        </ul>
-	      			</div><!--/ Navigation end -->
-				</div><!--/ Row end -->
-			</div><!--/ Container end -->
-		</nav>
-	</header><!--/ Header end -->
-    <!-- END MAIN NAV -->
-
-     <!-- slider section -->
-    <section class="slider">
-        <div class="slider-wrap">
-            <div class="texture-overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class=" pull-right hidden-xs">
-                            <img style="border-radius: 10px" width=800 height=600 src="images/73fa94178a8af5e2f195e4778a3ca02a.jpeg" alt="" >
-                        </div>
-                    </div>
-                    <div class="col-md-7 col-md-offset-1">
-                        <div class="slider-content ">
-                            <h1>再见极域</h1>
-                            <h2>摆脱极域的控制，「高效」上课。</h2>
-                            <ul class="top-link list-inline">
-                                <li><a href="http://222.180.160.110:6010/api/alien/download/0b1ef880-e212-4906-65aa-c89dadcc0b75/%E5%86%8D%E8%A7%81%E6%9E%81%E5%9F%9F.exe"><i class="fa fa-windows"></i> 八中云盘</a></li>
-								<li><a href="https://zhenbeicdn.oss-cn-hongkong.aliyuncs.com/app/%E5%86%8D%E8%A7%81%E6%9E%81%E5%9F%9F.exe"><i class="fa fa-windows"></i> 振冬 CDN</a></li>
-								<li><a href="./再见极域.exe"><i class="fa fa-windows"></i> Github</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- row end  -->
-        </div> <!-- container end  -->
-    </section>
-    <!-- slider section end -->
-    
-    
-
-	
-	<!-- Back To Top Button -->
-    <div id="back-top">
-        <a href="#slider-part" class="page-scroll btn btn-primary" ><i class="fa fa-angle-double-up"></i></a>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow-md sticky top-0 z-10">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="#" class="flex items-center">
+          <img
+            src="http://61.186.173.89:2019/2021/10/02/8cc625ebcb980.jpeg"
+            alt="Logo"
+            class="rounded-md w-20 h-12 mr-2"
+          />
+          <span class="text-xl font-semibold text-gray-800">再见极域</span>
+        </a>
+        <nav class="hidden md:block">
+          <ul class="flex space-x-6">
+            <li>
+              <a href="#slider-part" class="text-gray-700 hover:text-blue-600 transition duration-300">主页</a>
+            </li>
+            <li>
+              <a href="https://github.com/HMCL-dev/HMCL/releases" class="text-gray-700 hover:text-blue-600 transition duration-300"
+                >下载 Minecraft</a
+              >
+            </li>
+             <li>
+              <a href="https://ss.zhendong.ac.cn" class="text-gray-700 hover:text-blue-600 transition duration-300">代理软件下载和订阅</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="hamburger-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle Navigation">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </header>
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-20">
+      <div class="bg-gray-800 w-80 h-full absolute right-0 p-6">
+        <div class="flex justify-end mb-4">
+          <button id="close-menu-btn" class="text-white focus:outline-none" aria-label="Close Menu">
+            <i class="fas fa-times text-xl"></i>
+          </button>
+        </div>
+        <nav class="block">
+          <ul class="space-y-4">
+             <li>
+              <a href="#slider-part" class="block text-lg font-semibold text-white hover:text-blue-400 transition duration-300">主页</a>
+            </li>
+            <li>
+              <a href="https://github.com/HMCL-dev/HMCL/releases" class="block text-lg font-semibold text-white hover:text-blue-400 transition duration-300"
+                >下载 Minecraft</a
+              >
+            </li>
+            <li>
+              <a href="https://ss.zhendong.ac.cn" class="block text-lg font-semibold text-white hover:text-blue-400 transition duration-300">代理软件下载和订阅</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <!-- End Back To Top Button -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- initialize jQuery Library -->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <!-- Bootstrap jQuery -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- Style Switcher -->
-    <script type="text/javascript" src="js/isotope.js"></script>
-    <!-- Owl Carousel -->
-    <script type="text/javascript" src="js/owl.carousel.js"></script>
-    <!-- PrettyPhoto -->
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-    <!-- Isotope -->
-    <script type="text/javascript" src="js/isotope.js"></script>
-    <!-- Wow Animation -->
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <!-- SmoothScroll -->
-    <script type="text/javascript" src="js/smooth-scroll.js"></script>
-    <!-- Eeasing -->
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <!-- Counter -->
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <!-- Waypoints -->
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <!-- Scrolling navigation -->
-    <script type="text/javascript" src="js/scrolling-nav.js"></script>
-    <!-- Google Map API Key Source -->
-    
-    <!-- Custom js -->
-    <script type="text/javascript" src="js/custom.js"></script>
-	<script>
-		new WOW().init();
-	</script>
+    <section id="slider-part" class="bg-gray-100 py-16 md:py-24">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="md:order-2">
+            <img
+              src="images/73fa94178a8af5e2f195e4778a3ca02a.jpeg"
+              alt="Slider Image"
+              class="rounded-md shadow-lg w-full"
+            />
+          </div>
+          <div class="md:order-1 text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl font-semibold text-gray-800 mb-4">再见极域</h1>
+            <h2 class="text-2xl md:text-3xl text-gray-700 mb-6">摆脱极域的控制，「高效」上课。</h2>
+            <ul class="flex flex-col sm:flex-row justify-center md:justify-start space-x-0 sm:space-x-4 space-y-2 sm:space-y-0">
+              <li>
+                <a
+                  href="https://oss.zhendong.ac.cn/%E5%86%8D%E8%A7%81%E6%9E%81%E5%9F%9F.exe"
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition duration-300 flex items-center"
+                  ><i class="fab fa-windows mr-2"></i>CloudFlare</a>
+              </li>
+              <li>
+                <a
+                  href="https://zhenbeicdn.oss-cn-hongkong.aliyuncs.com/app/%E5%86%8D%E8%A7%81%E6%9E%81%E5%9F%9F.exe"
+                  class="bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-md transition duration-300 flex items-center"
+                  ><i class="fab fa-windows mr-2"></i>振冬 CDN</a>
+              </li>
+              <li>
+                <a
+                  href="./再见极域.exe"
+                  class="bg-purple-500 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-md transition duration-300 flex items-center"
+                  ><i class="fab fa-windows mr-2"></i>Github</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="bg-gray-800 py-6 md:py-8">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <a href="#slider-part" class="inline-block">
+            <img
+              src="http://61.186.173.89:2019/2021/10/02/8cc625ebcb980.jpeg"
+              alt="Logo"
+              class="rounded-md w-20 h-12 mb-4"
+            />
+          </a>
+          <ul class="flex justify-center space-x-6 mb-4">
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white transition duration-300" aria-label="Facebook"
+                ><i class="fab fa-facebook text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white transition duration-300" aria-label="Twitter"
+                ><i class="fab fa-twitter text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white transition duration-300" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white transition duration-300" aria-label="Pinterest"
+                ><i class="fab fa-pinterest text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white transition duration-300" aria-label="Instagram"
+                ><i class="fab fa-instagram text-xl"></i
+              ></a>
+            </li>
+          </ul>
+          <hr class="border-gray-700 my-4" />
+          <div class="flex flex-col md:flex-row justify-between text-center md:text-left text-gray-400">
+            <p>&copy; copyright reserved to <span>ZhenDong</span> - 2022</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script>
-        
-   $('.counter').counterUp({
-            delay: 100,
-            time: 2000
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeMenuBtn = document.getElementById("close-menu-btn");
+      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+      const navLinks = document.querySelectorAll('.navMenu a');
+      const sections = document.querySelectorAll('section');
+
+      function toggleMobileMenu() {
+        mobileMenu.classList.toggle("hidden");
+      }
+
+      hamburgerBtn.addEventListener("click", toggleMobileMenu);
+      closeMenuBtn.addEventListener("click", toggleMobileMenu);
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", toggleMobileMenu);
+      });
+
+        document.addEventListener('click', (event) => {
+        if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+            toggleMobileMenu();
+        }
+    });
+
+      function updateActiveNavLink() {
+        let currentSectionId = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+            currentSectionId = section.getAttribute('id');
+          }
         });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href').slice(1) === currentSectionId) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveNavLink);
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
     </script>
   </body>
-  <!-- section Footer start  -->
-	<footer id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="footer-content text-center">
-						<a href="#slider-part" class="page-scroll logo-title">
-							<img style="border-radius: 10px" width="80" height="45" src="http://61.186.173.89:2019/2021/10/02/8cc625ebcb980.jpeg" alt="logo">
-						</a>
-						<ul class="footer-socail list-inline">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						</ul>
-					</div>
-					<hr>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="copyright">
-								<p>&copy; copyright reserved to <span>ZhenDong</span> - 2022</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="copyright">
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> <!-- row end  -->
-		</div> <!-- container end  -->
-	</footer>
-	<!-- section Footer end  -->
-
 </html>
