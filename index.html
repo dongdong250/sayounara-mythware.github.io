@@ -7,17 +7,42 @@
     <link href="https://cdn.staticfile.org/lato/3.0.0/lato.min.css" rel="stylesheet">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
+    .top-banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fffae6;
+      color: #333;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 16px;
+      border-bottom: 1px solid #ccc;
+      z-index: 9999;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 100px; /* 防止内容被遮挡 */
+    }
+  </style>
+    <style>
       body {
         font-family: 'Lato', sans-serif;
       }
     </style>
   </head>
+
+
+  <div class="top-banner">
+    🔔 立即尝试：<a href="https://nbb.zhendong.ac.cn/">"新版「再见极域」</a>
+  </div>
   <body class="bg-gray-100">
     <header class="bg-white shadow-md sticky top-0 z-10">
       <div class="container mx-auto px-4 py-3 flex justify-between items-center">
         <a href="#" class="flex items-center">
           <img
-            src="http://61.186.173.89:2019/2021/10/02/8cc625ebcb980.jpeg"
+            src="https://ww4.sinaimg.cn/mw690/008lLk2Dly1hy8y7r1dpig307i0d6hdu.gif"
             alt="Logo"
             class="rounded-md w-20 h-12 mr-2"
           />
